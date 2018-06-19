@@ -66,6 +66,12 @@ function printValidPrecendence(input) {
 		} else if(equal === false && firstValid[i] > secondValid[i]) {
 			console.log("after\n")
 			break;
+		} else if(equal === true && firstValid[i] < secondValid[i]) {
+			console.log("before\n")
+			break;
+		} else if(equal === true && firstValid[i] > secondValid[i]) {
+			console.log("after\n")
+			break;
 		} else if(equal === true && i === 2) {
 			console.log("equal\n")
 		} else if(firstValid[i] === secondValid[i]) {
