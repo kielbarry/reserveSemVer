@@ -66,6 +66,7 @@ function returnIsInvalid(input){
 	// return semverRegex().test(input)
 }
 
+// printValidPrecendence logs to the console the precedence of the compared semvers.
 function printValidPrecendence(input) {
 	var validInput = returnValidInput(input)
 	var firstValid = validInput[0].split(".")
